@@ -6,6 +6,26 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
-  }
+    "dev": "nodemon src/app.js",
+    "build": "webpack --watch"
+  },
+  "name": "git---commands",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbresky/git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbresky/git/issues"
+  },
+  "homepage": "https://github.com/jbresky/git#readme",
+  "description": ""
 }
