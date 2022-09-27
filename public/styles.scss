@@ -1,4 +1,20 @@
+
+$main-color: azure;
+$border-map: (width: 2px, radius: 5px, style: solid) ;
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $main-color;
+}
+
 div.app{
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    h1{
+        border: $border-map;
+        padding: 10px;
+        font-weight: lighter;
+    }
 }
