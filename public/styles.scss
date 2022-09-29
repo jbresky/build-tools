@@ -1,6 +1,6 @@
 
-$main-color: azure;
-$border-map: (width: 2px, radius: 5px, style: solid) ;
+$main-color: #1f2028;
+$border-list: 2px solid white;
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,9 +12,56 @@ div.app{
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    h1{
-        border: $border-map;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    h1.tool-names{
+        border: $border-list;
+        border-radius: 5px;
+        cursor: pointer;
         padding: 10px;
         font-weight: lighter;
+        background: #d0d6d6;
+        text-align: center;
+        width: 130px;
+    }
+}
+
+p, ul li{
+    font-size: 1.2rem;
+    color: #9598aa;
+}
+
+p.tool-description{
+    border: 2px dotted;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    padding: 1rem 2rem 3rem;
+}
+h2, h3{
+    color: white;
+
+}
+
+h1.title{
+    font-size: 30px;
+    margin: 2rem 0;
+    color: whitesmoke;
+}
+
+div.footer {
+    // text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 3rem;
+    a {
+        color: white;
     }
 }
