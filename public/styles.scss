@@ -2,6 +2,14 @@
 $main-color: #1f2028;
 $border-list: 2px solid white;
 
+@mixin description-box($color:#9598AA, $width){
+    border: {
+        width: $width;
+        color: $color;
+        style: dotted;
+    }
+}
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: $main-color;
@@ -34,7 +42,8 @@ p, ul li{
 }
 
 p.tool-description{
-    border: 2px dotted;
+    // border: 2px dotted;
+    @include description-box(2px);
     padding: 20px;
     border-radius: 5px;
 }
@@ -46,7 +55,6 @@ main{
 }
 h2, h3{
     color: white;
-
 }
 
 h1.title{
